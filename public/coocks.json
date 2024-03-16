@@ -1,0 +1,90 @@
+[
+    {
+        "recipe_image": " https://i.ibb.co/pWgHkXk/pexels-samer-d-2233729.jpg",
+        "id": 1,
+        "recipe_name": "Chicken Teriyaki",
+        "short_description": "A delicious Japanese dish with tender chicken cooked in sweet and sauce.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "400 g mushroom"
+        ],
+        "preparing_time": 30,
+        "calories": 320
+    },
+    {
+        "recipe_image": "https://i.ibb.co/qp9yMks/coock1.png",
+        "id": 2,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta dish with rich tomato sauce and ground beef.",
+        "ingredients": [
+            "400 g spaghetti",
+            "500 g ground beef",
+            "1 onion",
+            "2 cloves garlic",
+            "400 g canned tomatoes"
+        ],
+        "preparing_time": 45,
+        "calories": 450
+    },
+    {
+        "recipe_image": " https://i.ibb.co/df58QXG/coock2.png",
+        "id": 3,
+        "recipe_name": "Vegetable Stir Fry",
+        "short_description": "Quick and healthy stir fry loaded with colorful vegetables and tofu.",
+        "ingredients": [
+            "300 g tofu",
+            "1 bell pepper",
+            "1 broccoli",
+            "100 g snap peas",
+            "4 tbsp soy sauce"
+        ],
+        "preparing_time": 20,
+        "calories": 250
+    },
+    {
+        "recipe_image": "https://i.ibb.co/pJM7YXb/pexels-dana-tentis-691114.jpg",
+        "id": 4,
+        "recipe_name": "Greek Salad",
+        "short_description": "Refreshing salad with crisp cucumbers, juicy tomatoes, olives, and feta cheese.",
+        "ingredients": [
+            "2 cucumbers",
+            "4 tomatoes",
+            "1 red onion",
+            "100 g olives",
+            "200 g feta cheese"
+        ],
+        "preparing_time": 15,
+        "calories": 180
+    },
+    {
+        "recipe_image": "https://i.ibb.co/TWrxqz8/pexels-rama-khandkar-2113556.jpg",
+        "id": 5,
+        "recipe_name": "Banana Smoothie",
+        "short_description": "Creamy and satisfying smoothie made with ripe bananas and Greek yogurt.",
+        "ingredients": [
+            "2 ripe bananas",
+            "200 ml Greek yogurt",
+            "1 tbsp honey",
+            "100 ml milk"
+        ],
+        "preparing_time": 5,
+        "calories": 200
+    },
+    {
+        "recipe_image": "https://i.ibb.co/SvMnWy1/pexels-daniel-reche-1556688.jpg",
+        "id": 6,
+        "recipe_name": "Chocolate Cake",
+        "short_description": "Indulgent chocolate cake with rich cocoa flavor, perfect for any occasion.",
+        "ingredients": [
+            "200 g flour",
+            "100 g cocoa powder",
+            "200 g sugar",
+            "200 g butter",
+            "4 eggs"
+        ],
+        "preparing_time": 60,
+        "calories": 350
+    }
+]
