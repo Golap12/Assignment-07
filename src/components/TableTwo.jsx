@@ -8,7 +8,7 @@ const TableTwo = ({ cooked, min, calories }) => {
                 <h3 className='text-xl font-bold text-center'>Currently cooking: {cooked.length}</h3>
                 <div className='border-2 border-dashed mt-3'></div>
 
-                <table className='text-[12px] font-medium text-[#666666]  border mt-5 shadow-[0px_20px_20px_10px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024]'>
+                <table className='text-[12px] font-medium text-[#666666]  border mt-5 shadow-[0px_0px_20px_10px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024]'>
                     <thead>
                         <tr>
                             <th className='p-2 border-2 bg-yellow-300'>Count</th>
