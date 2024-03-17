@@ -59,7 +59,7 @@ function App() {
 
 
   return (
-    <div className='container mx-auto px-3 body'>
+    <div className='container mx-auto px-3 body xl:px-24'>
 
       <Navbar></Navbar>
       <Hero></Hero>
