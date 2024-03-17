@@ -8,7 +8,7 @@ const TableTwo = ({ cooked, min, calories }) => {
                 <h3 className='text-xl font-bold text-center'>Currently cooking: {cooked.length}</h3>
                 <div className='border-2 border-dashed mt-3'></div>
 
-                <table className='text-[12px] font-medium text-[#666666]  border mt-5'>
+                <table className='text-[12px] font-medium text-[#666666]  border mt-5 shadow-[0px_20px_20px_10px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024]'>
                     <thead>
                         <tr>
                             <th className='p-2 border-2 bg-yellow-300'>Count</th>
@@ -17,16 +17,17 @@ const TableTwo = ({ cooked, min, calories }) => {
                             <th className='p-2 border-2 bg-teal-200'>Calories</th>
                         </tr>
                     </thead>
-                    <tbody className="">
+                    <tbody>
 
                         {
                             cooked.map((items, index) => (
                                 <tr className="bg-gray-100 " key={items.id}>
-                                    <td className='p-2 border-2 text-center'>{index+1}</td>
+                                    <td className='p-2 border-2 text-center'>{index + 1}</td>
                                     <td className='p-2 border-2'>{items.recipe_name}</td>
                                     <td className='p-2 border-2'>{items.preparing_time} Minutes</td>
                                     <td className='p-2 border-2'>{items.calories} calories</td>
                                 </tr>
+
                             ))
                         }
                         <tr>

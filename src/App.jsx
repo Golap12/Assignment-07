@@ -6,6 +6,10 @@ import Cooking from './components/Cooking';
 import Table from './components/Table';
 import TableTwo from './components/TableTwo';
 
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [cooks, setCooks] = useState([]);
   const [cooking, setCooking] = useState([]);
@@ -31,7 +35,7 @@ function App() {
       setCooking([...cooking, c]);
     }
     else {
-      alert('kha')
+      toast("Item can only be added once!");
     }
   }
 
@@ -40,14 +44,16 @@ function App() {
   const handlePrepare = (t2, minutes, cal, id) => {
 
     setCooked([...cooked, t2]);
+
+    const newCook = cooking.filter(item => item.id != id);
+    setCooking(newCook);
+
     const newMin = min + minutes;
     setMin(newMin);
 
     const newCalories = calories + cal;
     setCalories(newCalories);
 
-    const newCook = cooking.filter(item => item.id != id);
-    setCooking(newCook);
 
   }
 
@@ -56,7 +62,7 @@ function App() {
 
   return (
     <div className='container mx-auto px-3 body'>
-      
+
       <Navbar></Navbar>
       <Hero></Hero>
       <Recipes></Recipes>
@@ -79,6 +85,8 @@ function App() {
           <TableTwo cooked={cooked} min={min} calories={calories}>
 
           </TableTwo>
+
+          <ToastContainer />
         </div>
       </div>
     </div>
