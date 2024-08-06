@@ -32,9 +32,9 @@ const TableTwo = ({ cooked, min, calories }) => {
                         }
                         <tr>
                             <td className='p-2 border-2'></td>
-                            <td className='p-2 border-2'></td>
-                            <td className='p-2 border-2'>Total Minutes = <span className="font-extrabold text-sm">{min}</span> Min</td>
-                            <td className='p-2 border-2'>Total Calories = <span className="font-extrabold text-sm">{calories}</span> Cal</td>
+                            <td className='p-2 border-2 font-extrabold text-sm'>Total =</td>
+                            <td className='p-2 border-2'><span className="font-extrabold text-sm">{min}</span> Minutes</td>
+                            <td className='p-2 border-2'><span className="font-extrabold text-sm">{calories}</span> Calories</td>
                         </tr>
                     </tbody>
                 </table>

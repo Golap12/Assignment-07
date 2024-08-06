@@ -66,7 +66,7 @@ function App() {
       <Recipes></Recipes>
 
       <div className='flex md:flex-row flex-col justify-between gap-5 mt-10 mb-20'>
-        <div className='left side grid grid-cols-1 md:grid-cols-2 gap-5'>
+        <div className='left side grid grid-cols-1 md:grid-cols-2 gap-5 border p-4 rounded-xl'>
           {
             cooks.map(cooks =>
               <Cooking key={cooks.id} cooks={cooks} handleCook={handleCook}>
@@ -75,16 +75,18 @@ function App() {
           }
         </div>
 
-        <div className='right-side border rounded-xl flex-1'>
-          <Table cooking={cooking} handlePrepare={handlePrepare}>
+        <div className='right-side border rounded-xl flex-1 p-4'>
+          <div className='rounded-xl shadow-[0px_0px_20px_10px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024,0px_3px_8px_0px_#00000024]'>
+            <Table cooking={cooking} handlePrepare={handlePrepare}>
 
-          </Table>
+            </Table>
 
-          <TableTwo cooked={cooked} min={min} calories={calories}>
+            <TableTwo cooked={cooked} min={min} calories={calories}>
 
-          </TableTwo>
+            </TableTwo>
 
-          <ToastContainer />
+            <ToastContainer />
+          </div>
         </div>
       </div>
     </div>
